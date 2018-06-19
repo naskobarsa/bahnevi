@@ -1,7 +1,8 @@
 <!DOCTYPE>
 <html>
-<head id="head">
-  <title></title>
+<head id="head"><title>
+
+</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
   <link type="text/css" rel="stylesheet" href="../ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/ui-lightness/jquery-ui.css"/>
   <link href="CMSPages/RPcssMaster_S0071-Auroradae6.css?stylesheetname=RPcssMaster_S0071-Aurora" type="text/css"rel="stylesheet"/>
@@ -682,9 +683,9 @@
     <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185"/>
   </div>
   <script type="text/javascript">
-      //<![CDATA[
+
       Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM', ''], [], [], 90, '');
-      //]]>
+
   </script>
   <div id="CMSHeaderDiv">
     <!-- -->
@@ -704,8 +705,9 @@
             <div class="top-address top-link">
               <a href="Basanovich.html" target="_self">
                 <em class="icon-pin hidden-lg"></em>
-                <span class="hidden-sm hidden-xs hidden-md">Apartment 1 - Basanovich</span>
-                <span class="hidden-lg">Directions</span>
+                <div class="hidden-sm hidden-xs hidden-md tooltip2">Apartment 1 - Basanovich
+                  <span class="tooltiptext">Not Available</span>
+                </div>
               </a>
             </div>
             <div class="top-CTA1 top-link">
@@ -713,11 +715,18 @@
                 <span class="hidden-lg">
                   <em class="icon-handshake"></em>
                 </span>
-                Apartment 2 - Madara</a>
+                <div class="hidden-sm hidden-xs hidden-md tooltip2">Apartment 2 - Madara
+                  <span class="tooltiptext">Not Available</span>
+                </div>
+              </a>
             </div>
             <div class="header-chat top-link hidden-md hidden-sm hidden-xs">
               <div id="p_lt_zoneHeaderTop_LiveChatV1_pnlLiveChat" class="live-chat-container">
-                <a id="_lpChatBtn" href="SavaRadulov.html">Apartment 3 - Sava Radulov</a>
+                <a id="_lpChatBtn" href="SavaRadulov.html">
+                  <div class="hidden-sm hidden-xs hidden-md tooltip2">Apartment 3 - Sava Radulov
+                    <span class="tooltiptext">Not Available</span>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="top-CTA2 top-link">
@@ -725,10 +734,16 @@
               <span class="hidden-lg">
                 <em class="icon-user-1"></em>
               </span>
-              Apartment 4 - Nikolaevich
-            </a></div>
+                <div class="hidden-sm hidden-xs hidden-md tooltip2">Apartment 4 - Nikolaevich
+                  <span class="tooltiptext-available">Available</span>
+                </div>
+              </a></div>
             <div class="header-phone top-link">
-              <a class="seo-number" href="SavaRadulov.html">Apartment 5 - Sava Radulov (2)</a>
+              <a class="seo-number" href="SavaRadulov.html">
+                <div class="hidden-sm hidden-xs hidden-md tooltip2">Apartment 5 - Sava Radulov (2)
+                  <span class="tooltiptext">Not Available</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -744,9 +759,12 @@
               </div>
               <ul id="menuElem">
                 <li style=""><a href="Home.html" style="">Home</a></li>
-                <li class="floor-plans" style=""><a href="Floor-plans.html" style="">Floor plans</a></li>
-                <li class="active features" style=""><a href="Features.html" style="">Features</a></li>
                 <li class="gallery" style=""><a href="Gallery.html" style="">Gallery</a></li>
+                <li class="active features" style=""><a href="Features.html" style="">Features</a></li>
+                <li class="" style=""><a href="Cancellations.html" style="">Cancellations</a></li>
+                <li class="" style=""><a href="Hosts.html" style="">Hosts</a></li>
+                <li class="" style=""><a href="Cancellations.html" style="">House Rules</a></li>
+                <li class="floor-plans" style=""><a href="Floor-plans.html" style="">Floor plans</a></li>
                 <li class="location" style=""><a href="Location.html" style="">Location</a></li>
                 <li class="residents" style=""><a href="http://aurora.cms2.myleasestar.com/" style="">Residents</a></li>
                 <li class="contact" style=""><a href="Contact-2.html" style="">Contact Us</a></li>
@@ -806,7 +824,7 @@
           <div id="propertyLogo" class="">
             <span class="headerlogo" >Bahnevi</span>
             <a href="index.html">
-              <img id="p_lt_zoneHeaderMain_EditableImage_ucEditableImage_imgImage" src="../capi.myleasestar.com/finale.png" alt="" style="border-width:0;"/>
+              <img id="p_lt_zoneHeaderMain_EditableImage_ucEditableImage_imgImage" src="../images/finale.png" alt="" style="border-width:0;"/>
             </a>
             <span class="headerlogo">Apartments</span>
           </div>
@@ -933,7 +951,8 @@
                    class="row p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneFeaturesBottom_WebPartLoader_ctl00_pnlAmenitiesTabbed">
                 <div class="columns at-container">
                   <ul data-tabs="data-tabs" id="example-tabs" class="tabs">
-                    <li class="tabs-title is-active" role="presentation">
+                    <li class="tabs-title is-active" tab-community-amenities="tab-community-amenities"
+                        role="presentation">
                       <div class="tabs-link" data="#client-panel-0" role="tab" aria-controls="client-panel-0"
                            aria-selected="false" id="client-panel-0-label">Basanovich
                       </div>
@@ -999,19 +1018,31 @@
                         <div class="large-12 columns"><h1>House Rules</h1></div>
                       </div>
                       <div class="row">
-                        <div class="large-4 columns">
+                        <div class="large-6 columns">
                           <ul class="at-comm-amenities">
-                            <li class="tabbed-amenity ta-col-1"><span>House Rules</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>Mobile  - 0899 196 270 – Atanas Atanasov / Viber/ WhatsApp </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>550 leva rent/ 280 euros each month</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>Skype – zlatnata_obuvka</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>Exact Address -  Madara str 22, Varna, apartment 1, floor 1</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>You can check your water bills online at http://vikvarna.com/ your water ID is 1771124 ( Radomira Atanasova)</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>Your water meter usage starts with 78</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>You can check your electricity bills online https://www.energo-pro.bg/bg/Proverka-na-smetka-za-elektroenergiya</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>Your electricity ID is 1100126013 /0100604177</span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>If something needs to be repaired , text / call me </span></li>
+                            <li class="tabbed-amenity ta-col-2"><span>If you are going to some vacation/holiday, please turn the apartment water off.</span></li>
                           </ul>
                         </div>
-                        <div class="large-4 columns">
+                        <div class="large-6 columns">
                           <ul class="at-comm-amenities">
-                            <li class="tabbed-amenity ta-col-2"><span>House Rules</span></li>
-                          </ul>
-                        </div>
-                        <div class="large-4 columns">
-                          <ul class="at-comm-amenities">
-                            <li class="tabbed-amenity ta-col-3"><span>House Rules</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>If the water stops, please turn the boiler off.</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>If you will be late with the rent sometime, please text/call me</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>The rent should be paid between 11th and 16th day of the month</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>If you lost/forget all key’s apartment, I have one pair at home.</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>All the bulbs in the apartment are energy saving and have 2-years guarantee - if one of the bulbs got “dead” – do not throw it!</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>Please keep the washing machine door open as much as possible.</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>Please keep the mattress in the bedroom open from time to time.
+Please</span></li>
+                            <li class="tabbed-amenity ta-col-3"><span>Please, clean the air-conditioner filters every month.</span></li>
                           </ul>
                         </div>
                       </div>
@@ -1023,17 +1054,29 @@
                       <div class="row">
                         <div class="large-6 columns">
                           <ul class="at-comm-amenities">
-                            <li class="pet-item">Pet Policy Type: Cats and Dogs</li>
-                            <li class="pet-item">Pet Policy: STW Properties welcomes your four legged friends. Prior to
-                              move in, we will need copies of shot records. Permissible pets include dogs and indoor
-                              cats that do not exceed seventy (70) pounds in weight when full grown. Aggressive breeds
-                              prohibited.
-                            </li>
+                            <li class="tabbed-amenity ta-col-1"><span>If you are going to some vacation/holiday, please turn the apartment water  off.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If the water stops, please turn the boiler off</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>All the bulbs in the apartment are energy saving and have 2-years guarantee - if one of the bulbs got “dead” – do not throw it!</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please keep the washing machine door open as much as possible.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please keep the mattress in the bedroom open from time to time.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please clean the air-conditioner filters every month.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>350 leva rent/ 180 euros each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>5 leva for the building staircase – electricity and cleaning each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Mobile  - 0899 196 270 – Atanas Atanasov / Viber/ WhatsApp </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If something needs to be repaired ,text / call me </span></li>
                           </ul>
                         </div>
                         <div class="large-6 columns">
                           <ul class="at-comm-amenities">
-                            <li class="pet-item">Max Number of Pets: 2</li>
+                            <li class="tabbed-amenity ta-col-1"><span>Skype – zlatnata_obuvka</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Exact Address -  Sava Radulov 24, Varna, apartment 5 , floor 1</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>One month notification before leaving</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>The rent should be paid between        each month, if you think that you will be late for the rent sometime text/call me</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your water bills online at http://vikvarna.com/ your water ID is  </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your water meter usage starts with ...</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your electricity bills online https://www.energo-pro.bg/bg/Proverka-na-smetka-za-elektroenergiya</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your electricity ID is ...</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If you forget your keys in the apartment I have keys at home</span></li>
                           </ul>
                         </div>
                       </div>
@@ -1045,7 +1088,28 @@
                       <div class="row">
                         <div class="large-6 columns">
                           <ul class="at-comm-amenities">
-                            <li class="parking-item">Parking Type: Surface Lot</li>
+                            <li class="tabbed-amenity ta-col-1"><span>If you are going to some vacation/holiday, please turn the apartment water  off.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If the water stops, please turn the boiler off</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>All the bulbs in the apartment are energy saving and have 2-years guarantee - if one of the bulbs got “dead” – do not throw it!</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please keep the mattresses open from time to time.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please clean the air-conditioner filters every month.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>350 leva rent/ 180 euros each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>5 leva for the building staircase – electricity and cleaning each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Mobile  - 0899 196 270 – Atanas Atanasov / Viber/ WhatsApp </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If something needs to be repaired ,text / call me </span></li>
+                          </ul>
+                        </div>
+                        <div class="large-6 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-1"><span>Skype – zlatnata_obuvka</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Exact Address -  Kn.N.Nikolaevich 32, Varna, apartment 12, floor 5</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>One month notification before leaving</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>The rent should be paid between        each month, if you think that you will be late for the rent sometime text/call me</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your water bills online at http://vikvarna.com/ your water ID is ... </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your water meter usage starts with ...</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your electricity bills online https://www.energo-pro.bg/bg/Proverka-na-smetka-za-elektroenergiya</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your electricity ID is ...</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If you forget your keys in the apartment I have keys at home</span></li>
                           </ul>
                         </div>
                       </div>
@@ -1055,19 +1119,30 @@
                         <div class="large-12 columns"><h1>House Rules</h1></div>
                       </div>
                       <div class="row">
-                        <div class="large-4 columns">
+                        <div class="large-6 columns">
                           <ul class="at-comm-amenities">
-                            <li class="tabbed-amenity ta-col-1"><span>Granite Countertops</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If you are going to some vacation/holiday, please turn the apartment water  off.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If the water stops, please turn the boiler off</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please keep the mattress in the bedroom open from time to time.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please clean the air-conditioner filters every month.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>350 leva rent/ 180 euros each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>5 leva for the building staircase – electricity and cleaning each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Mobile  - 0899 196 270 – Atanas Atanasov / Viber/ WhatsApp </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If something needs to be repaired ,text / call me </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If you forget your keys in the apartment I have keys at home</span></li>
                           </ul>
                         </div>
-                        <div class="large-4 columns">
+                        <div class="large-6 columns">
                           <ul class="at-comm-amenities">
-                            <li class="tabbed-amenity ta-col-2"><span>Washer/Dryer Hookups</span></li>
-                          </ul>
-                        </div>
-                        <div class="large-4 columns">
-                          <ul class="at-comm-amenities">
-                            <li class="tabbed-amenity ta-col-3"><span>Stainless Steel Appliances</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Skype – zlatnata_obuvka</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Exact Address -  Sava Radulov 24, Varna, apartment 4, floor 2</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>One month notification before leaving</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>The rent should be paid between        each month, if you think that you will be late for the rent sometime text/call me</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your water bills online at http://vikvarna.com/ your water ID is ... </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your water meter usage starts with ...</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your electricity bills online https://www.energo-pro.bg/bg/Proverka-na-smetka-za-elektroenergiya</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your electricity ID is ...</span></li>
+
                           </ul>
                         </div>
                       </div>
@@ -1203,8 +1278,8 @@
               <img
                 id="p_lt_zoneFooter1_EditableImage2_ucEditableImage_imgImage"
                 title="Bahnevi Apartments Varna"
-                src="../capi.myleasestar.com/finale.png"
-                alt="https://capi.myleasestar.com/v2/dimg/51691121/%s/51691121.png" style="border-width:0;"/>
+                src="../images/finale.png"
+                alt="" style="border-width:0;"/>
             </a>
           </div>
           <div id="footerLogo2" class="footer-logo">
@@ -1235,15 +1310,16 @@
         </div>
         <div class="col-md-2 col-sm-2"><h5>Links</h5>
           <ul id="menuEle">
-            <li class="site-map">
-              <a href="site-map.html">Site Map</a>
-            </li>
-            <li class="privacy">
-              <a href="privacy-policy.html">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="http://aurora.cms2.myleasestar.com/" class="residents" target="_blank">Residents</a>
-            </li>
+            <li style=""><a href="Home.html" style="">Home</a></li>
+            <li class="gallery" style=""><a href="Gallery.html" style="">Gallery</a></li>
+            <li class="active features" style=""><a href="Features.html" style="">Features</a></li>
+            <li class="" style=""><a href="Cancellations.html" style="">Cancellations</a></li>
+            <li class="" style=""><a href="Hosts.html" style="">Hosts</a></li>
+            <li class="" style=""><a href="Cancellations.html" style="">House Rules</a></li>
+            <li class="floor-plans" style=""><a href="Floor-plans.html" style="">Floor plans</a></li>
+            <li class="location" style=""><a href="Location.html" style="">Location</a></li>
+            <li class="residents" style=""><a href="" style="">Residents</a></li>
+            <li class="contact" style=""><a href="Contact-2.html" style="">Contact Us</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-5">
@@ -1285,6 +1361,7 @@
   src="http://cmsadmin.myleasestar.com/sitetracker.aspx?platform=cms2&amp;SiteId=5809262&amp;template=S0071-Aurora"
   type="text/javascript">
 </script>
+
 
 <script type="text/javascript">
     try {

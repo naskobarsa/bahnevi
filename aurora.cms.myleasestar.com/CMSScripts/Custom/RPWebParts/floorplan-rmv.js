@@ -1,5 +1,4 @@
-﻿
-var currentFloorplanId = null;
+﻿var currentFloorplanId = null;
 function f_showRichMediaViewer(floorplanId) {
     currentFloorplanId = floorplanId;
     $("#dialog-overlay").show();

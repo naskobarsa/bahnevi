@@ -20,6 +20,8 @@
   <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" type="text/javascript"></script>
   <script src="../code.jquery.com/jquery-migrate-1.4.1.js" type="text/javascript"></script>
   <script src="GlobalResources/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <script src="/TemplateResources/Standard/Aurora/scripts/Aurora.js"></script> -->
   <script type="text/javascript">
       $(document).ready(function () {
@@ -53,14 +55,14 @@
               let width = $(window).width();
               $("#scroll-down").addClass('faded');
               if (width > 1199) {
-                  let homeScrollPoint = $(".home-section2").offset().top - 178;
+                  let homeScrollPoint = $(".home-section2").offset().top - 100;
               }
               else {
-                  let homeScrollPoint = $(".home-section2").offset().top - 238;
+                  let homeScrollPoint = $(".home-section2").offset().top - 200;
               }
               $('html, body').animate({
                   scrollTop: homeScrollPoint
-              }, 1500, 'easeOutExpo');
+              }, 1800, 'easeOutExpo');
           });
 
           function sizeSpecials() {
@@ -83,8 +85,7 @@
   </script>
   <link href="finale.png" type="image/x-icon" rel="shortcut icon"/>
   <link href="finale.png" type="image/x-icon" rel="icon"/>
-  <link href="CmsPages/components.css"
-    type="text/css" rel="stylesheet"/>
+  <link href="CMSPages/components0f5a.css" type="text/css" rel="stylesheet"/>
   <script type="text/javascript">
       let sourcesList = JSON.parse('[{"DisplayName":"Apartment Finder Blue Book","PmSourceId":"S000000033"},{"DisplayName":"Apartment Guide","PmSourceId":"S000000036"},{"DisplayName":"Apartment Map","PmSourceId":"S000000034"},{"DisplayName":"ApartmentFinder.com","PmSourceId":"S000000041"},{"DisplayName":"ApartmentGuide.com","PmSourceId":"S000000003"},{"DisplayName":"Apartmentlinks.com","PmSourceId":"S000000011"},{"DisplayName":"ApartmentMatching.com","PmSourceId":"S000000004"},{"DisplayName":"ApartmentRatings.com","PmSourceId":"S000000042"},{"DisplayName":"Apartments.com","PmSourceId":"S000000005"},{"DisplayName":"ApartmentsNationwide.com","PmSourceId":"S000000006"},{"DisplayName":"ApartmentsPlus.com","PmSourceId":"S000000050"},{"DisplayName":"Billboard","PmSourceId":"S000000019"},{"DisplayName":"Brochure/Flyer","PmSourceId":"S000000020"},{"DisplayName":"CitySearch.com","PmSourceId":"S000000043"},{"DisplayName":"CraigsList.com","PmSourceId":"S000000044"},{"DisplayName":"Current resident","PmSourceId":"S000000027"},{"DisplayName":"Drive by","PmSourceId":"S000000021"},{"DisplayName":"EasyRent.com","PmSourceId":"S000000007"},{"DisplayName":"For Rent Magazine","PmSourceId":"S000000035"},{"DisplayName":"ForRent.com","PmSourceId":"S000000008"},{"DisplayName":"Google.com","PmSourceId":"S000000040"},{"DisplayName":"LivingChoices.com","PmSourceId":"S000000002"},{"DisplayName":"Local Line Rollover","PmSourceId":"S000000069"},{"DisplayName":"Local Newspaper","PmSourceId":"S000000016"},{"DisplayName":"Local Newspaper II","PmSourceId":"S000000017"},{"DisplayName":"Locator Service","PmSourceId":"S000000015"},{"DisplayName":"Move.com","PmSourceId":"S000000049"},{"DisplayName":"MoveForFree.com","PmSourceId":"S000000045"},{"DisplayName":"MyNewPlace.com","PmSourceId":"S000000039"},{"DisplayName":"National Newspaper","PmSourceId":"S000000018"},{"DisplayName":"Other","PmSourceId":"S000000026"},{"DisplayName":"Other OneSite property","PmSourceId":"S000000031"},{"DisplayName":"Other property","PmSourceId":"S000000032"},{"DisplayName":"Other publication","PmSourceId":"S000000037"},{"DisplayName":"Other site","PmSourceId":"S000000014"},{"DisplayName":"Preferred employer program","PmSourceId":"S000000028"},{"DisplayName":"Prior resident","PmSourceId":"S000000029"},{"DisplayName":"Property web site","PmSourceId":"S000000001"},{"DisplayName":"Radio Advertising","PmSourceId":"S000000025"},{"DisplayName":"Referral companies/merchants","PmSourceId":"S000000030"},{"DisplayName":"Rent.com","PmSourceId":"S000000012"},{"DisplayName":"Rentals.com","PmSourceId":"S000000010"},{"DisplayName":"RentAndMove.com","PmSourceId":"S000000013"},{"DisplayName":"RentClicks.com","PmSourceId":"S000000046"},{"DisplayName":"RentNet.com","PmSourceId":"S000000009"},{"DisplayName":"Sign","PmSourceId":"S000000023"},{"DisplayName":"TV Advertising","PmSourceId":"S000000024"},{"DisplayName":"UMoveFree.com","PmSourceId":"S000000047"},{"DisplayName":"Unknown/Would not give","PmSourceId":"S000000038"},{"DisplayName":"Yahoo.com","PmSourceId":"S000000048"},{"DisplayName":"Yellow pages","PmSourceId":"S000000022"}]');
       let matchedSource = f_getSessionStorage('matchedSource');
@@ -211,10 +212,14 @@
               }
           }
       });
+
+
   </script>
-  <script type="text/javascript">let propertyId = '5809262';
-  let lsApi = 'https://c-leasestar-api.realpage.com/';
-  let cacheUrl = '';
+
+  <script type="text/javascript">
+      let propertyId = '5809262';
+      let lsApi = 'https://c-leasestar-api.realpage.com/';
+      let cacheUrl = '';
   </script>
   <script type="text/javascript">let leadObj = [{"PhoneNumber": "(972) 954-1935", "LeadChannelName": "Website"}];
   let googleCallTrackingEnabled = false;</script>
@@ -238,7 +243,7 @@
       "Src": "https://my.matterport.com/show/?m=isKMZjiLTzn",
       "AltText": "2 Bedroom Tour Demo",
       "TourType": "Matterport",
-      "ImgUrl": "https://capi.myleasestar.com/v2/dimg/56300280/%s/56300280.png"
+      "ImgUrl": "https://images/v2/dimg/56300280/%s/56300280.png"
   }]</script>
   <script src="CMSScripts/Custom/RPWebParts/fancybox3/jquery.fancybox.js" defer="defer" type="text/javascript"></script>
   <script src="CMSScripts/Custom/RPWebParts/media-viewer.js" defer="defer" type="text/javascript"></script>
@@ -246,7 +251,7 @@
           type="text/javascript"></script>
   <script src="CMSScripts/Custom/RPWebParts/jquery.mobile.toucheventsonly.min.js" defer="defer"
           type="text/javascript"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW30GC_75mPsIR1FQCm_7TM8Xk_PHAYk0&callback=initMap"
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW30GC_75mPsIR1FQCm_7TM8Xk_PHAYk0&language=en&callback=initMap"
           defer="defer" type="text/javascript"></script>
   <script type="text/javascript">let myLatLng = {lat: 43.2141, lng: 27.9147}; let latitude = '43.2141', longitude = '27.9147', name = 'Aurora',
       addressLine1 = '555 Ross Avenue', city = 'Varna', addressState = 'TX', addressPostalCode = '75201',
@@ -380,10 +385,6 @@
 
     }
 
-    .InfoWindow {
-      background: red;
-    }
-
     a#_lpChatBtn {
        cursor: pointer;
      }
@@ -419,9 +420,9 @@
     }
   </style>
 </head>
-<body class="LTR ENUS ContentBody">
+<body  onload="myFunction(),startTime() ">
 
-<!-- Google Tag Manager -->
+<!--&lt;!&ndash; Google Tag Manager &ndash;&gt; onload="startTime()"-->
 <noscript>
   <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PNG482G" height="0" width="0"
           style="display:none;visibility:hidden"></iframe>
@@ -482,8 +483,20 @@
         return cookieValue;
     }
 </script>
+<script>
+    var myVar;
 
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
 
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+</script>
+<div id="loader"></div>
+<div  id="myDiv" class="animate-bottom">
 <div class="oB-overlay" style="display: none;"></div>
 <div id="oldBrowserModal" style="display: none;">
   <div class="oB-dialog">
@@ -619,30 +632,61 @@
       <div class="header-top-bar">
         <div class="container">
           <div class="row">
-            <div class="top-address top-link">
+            <div class="top-address top-link top-link-after ">
               <a href="Basanovich.html" target="_self">
-                <em class="icon-pin hidden-lg"></em>
-                <span class="hidden-sm hidden-xs hidden-md">Apartment 1 - Basanovich</span>
-                <span class="hidden-lg">Directions</span>
+                <div class=" tooltip2">
+                  <div class="span-hover">
+                    <span class="hidden-small">Apartment 1 - </span>
+                    <span>Basanovich</span>
+                  </div>
+                  <span class="tooltiptext">Not Available</span>
+                </div>
               </a>
             </div>
-            <div class="top-CTA1 top-link">
-              <a href="Madara.html" target="_self" class="hidden-xs">
-                <span class="hidden-lg"><em class="icon-handshake"></em></span>
-                Apartment 2 - Madara</a>
+            <div class="top-CTA1 top-link top-link-after">
+              <a href="Madara.html" target="_self" class="">
+                <div class="tooltip2">
+                  <div class="span-hover">
+                    <span class="hidden-small">Apartment 2 -</span> &ensp;
+                    <span>Madara &ensp;</span>
+                  </div>
+                  <span class="tooltiptext">Not Available</span>
+                </div>
+              </a>
             </div>
-            <div class="header-chat top-link hidden-md hidden-sm hidden-xs">
-              <div id="p_lt_zoneHeaderTop_LiveChatV1_pnlLiveChat" class="live-chat-container">
-                <a id="_lpChatBtn" href="SavaRadulov.html">Apartment 3 - Sava Radulov</a>
-              </div>
+            <div class="header-chat top-link top-link-after">
+                <a id="_lpChatBtn" href="SavaRadulov.html">
+                  <div class="tooltip2">
+                    <div class="span-hover">
+                      <span class="hidden-small">Apartment 3 - </span>
+                      <span>Sava Radulov</span>
+                    </div>
+                      <span class="tooltiptext">Not Available</span>
+                </div>
+                </a>
             </div>
-            <div class="top-CTA2 top-link"><a href="http://aurora.cms2.myleasestar.com/" target="_self"
-                                                    class="hidden-xs">
-              <span class="hidden-lg"><em class="icon-user-1"></em></span>
-              Apartment 4 - Nikolaevich
-            </a></div>
+            <div class="top-CTA2 top-link top-link-after">
+              <a href="http://aurora.cms2.myleasestar.com/" target="_self" class="">
+              <div class="tooltip2">
+                <div class="span-hover">
+                  <span class="hidden-small">Apartment 4 - </span>
+                  <span>Nikolaevich</span>
+                </div>
+                <span class="tooltiptext-available">Available</span>
+            </div>
+            </a>
+            </div>
             <div class="header-phone top-link">
-              <a class="seo-number" href="SavaRadulov.html">Apartment 5 - Sava Radulov (2)</a></div>
+              <a class="seo-number" href="SavaRadulov.html">
+                <div class="tooltip2">
+                  <div class="span-hover">
+                    <span class="hidden-small">Apartment 5 - </span>
+                    <span>Sava Radulov (2)</span>
+                  </div>
+                  <span class="tooltiptext">Not Available</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -655,10 +699,13 @@
                   <em class="fa fa-times" aria-hidden="true"></em></a>
               </div>
               <ul id="menuElem">
-                <li class="active" style=""><a href="Home.html" style="">Home</a></li>
-                <li class="floor-plans" style=""><a href="Floor-plans.html" style="">Apartments plans</a></li>
-                <li class="features" style=""><a href="Features.html" style="">Features</a></li>
+                <li style=""><a href="Home.html" style="">Home</a></li>
                 <li class="gallery" style=""><a href="Gallery.html" style="">Gallery</a></li>
+                <li class="active features" style=""><a href="Features.html" style="">Features</a></li>
+                <li class="" style=""><a href="Cancellations.html" style="">Cancellations</a></li>
+                <li class="" style=""><a href="Hosts.html" style="">Hosts</a></li>
+                <li class="" style=""><a href="Cancellations.html" style="">House Rules</a></li>
+                <li class="floor-plans" style=""><a href="Floor-plans.html" style="">Floor plans</a></li>
                 <li class="location" style=""><a href="Location.html" style="">Location</a></li>
                 <li class="residents" style=""><a href="http://aurora.cms2.myleasestar.com/" style="">Residents</a></li>
                 <li class="contact" style=""><a href="Contact-2.html" style="">Contact Us</a></li>
@@ -706,15 +753,45 @@
               <em class="fa fa-bars" aria-hidden="true"></em>
               <span class="hidden-xs">MENU</span></a></div>
           <div class="header-FP-Link">
-            <a href="floor-plans-2.html">
-              <span class="hidden-xs">APARTMENTS PLANS</span>
-              <em class="icon-blueprint"></em>
-            </a>
+            <span id="date"></span>
+            <p id="txt"></p>
+          </div>
+          <div class="music-stop"
+               style="position: absolute;top: 12px;right: 0px;z-index: 9999;width: 50px;height: 50px; ">
+            <svg class="play" style="width: 50px; height: 50px; position: absolute; display: none;"
+                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>ON 3</title>
+              <g id="Capa_2" data-name="Capa 2">
+                <g id="Capa_1-2" data-name="Capa 1">
+                  <circle cx="25" cy="25" r="25" style="fill:#fff;opacity:0.1;isolation:isolate"></circle>
+                  <path
+                    d="M24.33,32.38l-5.67-4.74H15.17a.75.75,0,0,1-.75-.76v-3.8a.75.75,0,0,1,.75-.75h3.49l5.67-4.69a.43.43,0,0,1,.6.05h0A.37.37,0,0,1,25,18v14.1a.42.42,0,0,1-.44.41A.49.49,0,0,1,24.33,32.38Z"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10"></path>
+                  <path class="fade1" d="M32.15,17.42A13.06,13.06,0,0,1,34.56,25a12.44,12.44,0,0,1-2.49,7.52"
+                        style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"></path>
+                  <path class="fade2" d="M28.66,20.17a7.89,7.89,0,0,1,.06,9.55"
+                        style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"></path>
+                </g>
+              </g>
+            </svg>
+            <svg class="mute" style="width: 50px;height: 50px;position:absolute;" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 50 50"><title>OFF 3</title>
+              <g id="Capa_2" data-name="Capa 2">
+                <g id="Capa_1-2" data-name="Capa 1">
+                  <circle cx="25" cy="25" r="25" style="fill:#fff;opacity:0.1;isolation:isolate"></circle>
+                  <path
+                    d="M25.1,32.38l-5.66-4.74h-3.5a.8.8,0,0,1-.75-.76v-3.8a.79.79,0,0,1,.75-.75h3.5l5.67-4.69a.43.43,0,0,1,.6.05h0a.38.38,0,0,1,.1.27v14.1a.42.42,0,0,1-.44.41h0A.45.45,0,0,1,25.1,32.38Z"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10"></path>
+                  <line x1="29.92" y1="22.5" x2="34.81" y2="27.39"
+                        style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"></line>
+                  <line x1="34.81" y1="22.5" x2="29.92" y2="27.39"
+                        style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"></line>
+                </g>
+              </g>
+            </svg>
           </div>
           <div id="propertyLogo" class="hidden-xs">
-            <a href="index.html">
-              BAHNEVI APARTMENTS
-              <div> 5 Apartments in Varna for every taste</div>
+            <a href="index.html" class="header-rent">
+              <div>APARTMENTS  FOR RENT IN VARNA</div>
             </a>
           </div>
         </div>
@@ -736,8 +813,8 @@
     <div class="home-section2">
       <div class="home-section2-left">
         <div class="home-cta2">
-          <h2 class="cta-title">Apartment Plans</h2>
-          <p>With premium finishes and wide-open spaces, each apartment plan from Bahnevi Apartments brings you
+          <h2 class="cta-title">Apartments Resume</h2>
+          <p>With premium finishes and wide-open spaces, each apartment from Bahnevi Apartments brings you
             unparalleled luxury without sacrificing on comfort. </p>
           <div class="cta-button">
             <a href="floor-plans-2.html" target="_self">Availability
@@ -746,9 +823,55 @@
           </div>
         </div>
       </div>
+      <div id="myModall" class="modal">
+        <span class="close69 cursor69" onclick="closeModal()">&times;</span>
+        <div class="modal-content69">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="../images/Basanovich/101.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="../images/Basanovich/101.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="img_lights_wide.jpg" style="width:100%">
+          </div>
+
+          <a class="prev69" onclick="plusSlides(-1)"><img src="../images/back.png" width="80px" alt=""></a>
+          <a class="next69" onclick="plusSlides(1)"><img src="../images/next.png" width="80px" alt=""></a>
+
+          <div class="caption-container">
+            <p id="caption69"></p>
+          </div>
+
+
+          <div class="column69">
+            <img class="demo cursor69" src="../images/Basanovich/101.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+          </div>
+          <div class="column69">
+            <img class="demo cursor69" src="../images/Basanovich/101.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+          </div>
+          <div class="column69">
+            <img class="demo cursor69" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column69">
+            <img class="demo cursor69" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+        </div>
+      </div>
       <div class="home-section2-right">
-        <div id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection2_WebPartLoader_pnlContainer">
-          <script type="text/javascript">
+
+          <!--<script type="text/javascript">
               let bgimages = '.bg-images li';
               let target;
               let animType = 'slide';
@@ -920,219 +1043,118 @@
                   $('.background-gallery').css('width', $('.background-gallery-container').width() + 'px');
                   $('.background-gallery ul.bg-images').css('width', ($('.background-gallery-container').width() * numBgImages) + 'px');
               }
-          </script>
-          <div
-            id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection2_WebPartLoader_ctl00_background_gallery"
+          </script>-->
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active carousel-custom-background-image-8 hover-shadow cursor69" onclick="openModal();currentSlide(1)">
+                </div>
+                <div class="item carousel-custom-background-image">
+                </div>
+                <div class="item carousel-custom-background-image-1">
+                </div>
+                <div class="item carousel-custom-background-image-2">
+                </div>
+                <div class="item carousel-custom-background-image-3">
+                </div>
+                <div class="item carousel-custom-background-image-4">
+                </div>
+                <div class="item carousel-custom-background-image-5">
+                </div>
+                <div class="item carousel-custom-background-image-6">
+                </div>
+                <div class="item carousel-custom-background-image-7">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left glyphicon-chevron-custom"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right glyphicon-chevron-custom"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+    <!--      <div id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection2_WebPartLoader_ctl00_background_gallery"
             class="background-gallery-container">
-            <div
-              id="rpbg-p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection2_WebPartLoader_ctl00_background_gallery"
+            <div id="rpbg-p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection2_WebPartLoader_ctl00_background_gallery"
               class="background-gallery bg-slide">
-              <ul class="bg-images mbg">
-                <li class="li-image li-image-0"
-                    style="background-image: url(../capi.myleasestar.com/v2/dimg-crop/51691079/768x0/51691079.jpg);">
+              <ul class="bg-images dbg">
+                <li class="li-image li-image-0" style="background-image: url(../images/Radulov/13.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
-                <li class="li-image li-image-1" style="background-image: url(../capi.myleasestar.com/Madara/15.jpg);">
+                <li class="li-image li-image-1" style="background-image: url(../images/Madara/23.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
-                <li class="li-image li-image-2" style="background-image: url(../capi.myleasestar.com/Madara/15.jpg);">
+                <li class="li-image li-image-2" style="background-image: url(../images/Madara/23.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
-                <li class="li-image li-image-3" style="background-image: url(../capi.myleasestar.com/Madara/21.jpg);">
+                <li class="li-image li-image-3" style="background-image: url(../images/Madara/21.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
-                <li class="li-image li-image-4" style="background-image: url(../capi.myleasestar.com/Madara/14.jpg);">
+                <li class="li-image li-image-4" style="background-image: url(../images/Madara/14.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
                 <li class="li-image li-image-5"
-                    style="background-image: url(../capi.myleasestar.com/v2/dimg-crop/51691103/768x0/51691103.jpg);">
+                    style="background-image: url(../images/Radulov/baths1.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
                 <li class="li-image li-image-6"
-                    style="background-image: url(../capi.myleasestar.com/v2/dimg-crop/51691082/768x0/51691082.jpg);">
+                    style="background-image: url(../images/Basanovich/2.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
                 <li class="li-image li-image-7"
-                    style="background-image: url(../capi.myleasestar.com/v2/dimg-crop/51691085/768x0/51691085.jpg);">
+                    style="background-image: url(../images/Basanovich/33.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
                 <li class="li-image li-image-8"
-                    style="background-image: url(../capi.myleasestar.com/v2/dimg-crop/51691083/768x0/51691083.jpg);">
+                    style="background-image: url(../images/Basanovich/novi/1.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
                   </div>
                 </li>
-                <li class="li-image li-image-9"
-                    style="background-image: url(../capi.myleasestar.com/v2/dimg-crop/51691116/768x0/51691116.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-10"
-                    style="background-image: url(../capi.myleasestar.com/v2/dimg-crop/51691111/768x0/51691111.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-              </ul>
-              <div class="bg-arrow-left mbg">&nbsp;</div>
-              <div class="bg-arrow-right mbg">&nbsp;</div>
-              <ul class="bg-bullets mbg">
-                <li class="bg-bullet-0">●</li>
-                <li class="bg-bullet-1">●</li>
-                <li class="bg-bullet-2">●</li>
-                <li class="bg-bullet-3">●</li>
-                <li class="bg-bullet-4">●</li>
-                <li class="bg-bullet-5">●</li>
-                <li class="bg-bullet-6">●</li>
-                <li class="bg-bullet-7">●</li>
-                <li class="bg-bullet-8">●</li>
-                <li class="bg-bullet-9">●</li>
-                <li class="bg-bullet-10">●</li>
-              </ul>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691079/1920x1080/51691079.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691046/1920x1080/51691046.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691093/1920x1080/51691093.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691080/1920x1080/51691080.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691094/1920x1080/51691094.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691103/1920x1080/51691103.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691082/1920x1080/51691082.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691085/1920x1080/51691085.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691083/1920x1080/51691083.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691116/1920x1080/51691116.jpg"/>
-              </div>
-              <div class="img_wrapper mbg" itemprop="thumbnail" itemscope="itemscope"
-                   itemtype="http://schema.org/ImageObject">
-                <meta data-u="image" itemprop="contentUrl"
-                      content="//capi.myleasestar.com/v2/dimg/51691111/1920x1080/51691111.jpg"/>
-              </div>
-              <ul class="bg-images dbg">
-
-                <li class="li-image li-image-0" style="background-image: url(../capi.myleasestar.com/Radulov/13.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-1" style="background-image: url(../capi.myleasestar.com/Madara/23.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-2" style="background-image: url(../capi.myleasestar.com/Madara/23.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-3" style="background-image: url(../capi.myleasestar.com/Madara/21.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-4" style="background-image: url(../capi.myleasestar.com/Madara/14.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-0"
-                    style="background-image: url(../capi.myleasestar.com/Radulov/baths1.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-1"
-                    style="background-image: url(../capi.myleasestar.com/Basanovich/2.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-2"
-                    style="background-image: url(../capi.myleasestar.com/Basanovich/33.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-3"
-                    style="background-image: url(../capi.myleasestar.com/Basanovich/novi/1.jpg);">
-                  <div class="bg-caption-container">
-                    <div class="bg-caption"></div>
-                    <div class="bg-description"></div>
-                  </div>
-                </li>
-                <li class="li-image li-image-4" style="background-image: url(../capi.myleasestar.com/Radulov/14.jpg);">
+                <li class="li-image li-image-9" style="background-image: url(../images/Radulov/14.jpg);">
                   <div class="bg-caption-container">
                     <div class="bg-caption"></div>
                     <div class="bg-description"></div>
@@ -1141,78 +1163,9 @@
               </ul>
               <div class="bg-arrow-left dbg">&nbsp;</div>
               <div class="bg-arrow-right dbg">&nbsp;</div>
-              <ul class="bg-bullets dbg">
-                <li class="bg-bullet-0">●</li>
-                <li class="bg-bullet-1">●</li>
-                <li class="bg-bullet-2">●</li>
-                <li class="bg-bullet-3">●</li>
-                <li class="bg-bullet-4">●</li>
-                <li class="bg-bullet-5">●</li>
-                <li class="bg-bullet-6">●</li>
-                <li class="bg-bullet-7">●</li>
-                <li class="bg-bullet-8">●</li>
-                <li class="bg-bullet-9">●</li>
-                <li class="bg-bullet-10">●</li>
-              </ul>
             </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691079/1920x1080/51691079.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691046/1920x1080/51691046.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691093/1920x1080/51691093.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691080/1920x1080/51691080.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691094/1920x1080/51691094.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691103/1920x1080/51691103.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691082/1920x1080/51691082.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691085/1920x1080/51691085.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691083/1920x1080/51691083.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691116/1920x1080/51691116.jpg"/>
-            </div>
-            <div class="img_wrapper dbg" itemprop="thumbnail" itemscope="itemscope"
-                 itemtype="http://schema.org/ImageObject">
-              <meta data-u="image" itemprop="contentUrl"
-                    content="//capi.myleasestar.com/v2/dimg/51691111/1920x1080/51691111.jpg"/>
-            </div>
-          </div>
+          </div>-->
         </div>
-      </div>
       <div class="clear"></div>
     </div>
     <div class="home-section3">
@@ -1221,13 +1174,18 @@
         <div class="row">
           <div class="col-sm-6 col-md-4 home-cta" id="home-cta1">
             <div class="cta-img">
-              <img
-                id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection3_EditableImage_ucEditableImage_imgImage"
-                src="../capi.myleasestar.com/v2/dimg-crop/51691204/418x357/varna.jpg" alt="" style="border-width:0;"/>
+              <img id="myImg1" src="../images/v2/dimg-crop/51691204/418x357/varna.jpg"
+                alt="Varna Cathedral"/>
+            </div>
+            <div id="myModal" class="modal2">
+              <span class="close2">&times;</span>
+              <img class="modal-content2" id="img01">
+              <div id="caption"></div>
             </div>
             <div class="home-cta-text">
               All apartments are positioned in a quiet suburb near all of the action of downtown Varna, near The
               Cathedral and Varna Municipality.
+
             </div>
             <a href="neighborhood.html" target="_self" class="home-cta-button">
                                     <span>
@@ -1239,15 +1197,15 @@
           <div class="col-sm-6 col-md-4 home-cta" id="home-cta2">
             <div class="cta-img">
               <img
-                id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection3_EditableImage1_ucEditableImage_imgImage"
-                src="../capi.myleasestar.com/amenities.jpg" alt=""
+                id="myImg"
+                src="../images/amenities.jpg" alt=""
                 style="border-width:0;"/>
             </div>
             <div class="home-cta-text">
               Apartment living has changed in recent years. Now renters demand wide-range of amenities in their
               buildings. Check out our amenities and utilities list.
             </div>
-            <a href="amenities.html" target="_self" class="home-cta-button">
+            <a href="Amenities.html" target="_self" class="home-cta-button">
     <span>
       Amenities
       <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
@@ -1257,35 +1215,40 @@
           <div id="home-contact-form" class="col-md-4 col-xs-12">
             <div class="cta-form-container">
               <h3>Schedule Your Tour</h3>
+
               <script type="text/javascript">
-                  let rpData = null;
-                  let listofReasons = '';
-                  let defaultSource = 'S000000001';
-                  let hideRefer = 'false';
-                  let contactLeadSources = '<select tabindex="7" class="body-txt1" id="usersource" name="usersource"><option value="">-Select Source-</option><option value="S000000033">Apartment Finder Blue Book</option><option value="S000000036">Apartment Guide</option><option value="S000000034">Apartment Map</option><option value="S000000041">ApartmentFinder.com</option><option value="S000000003">ApartmentGuide.com</option><option value="S000000011">Apartmentlinks.com</option><option value="S000000004">ApartmentMatching.com</option><option value="S000000042">ApartmentRatings.com</option><option value="S000000005">Apartments.com</option><option value="S000000006">ApartmentsNationwide.com</option><option value="S000000050">ApartmentsPlus.com</option><option value="S000000019">Billboard</option><option value="S000000020">Brochure/Flyer</option><option value="S000000043">CitySearch.com</option><option value="S000000044">CraigsList.com</option><option value="S000000027">Current resident</option><option value="S000000021">Drive by</option><option value="S000000007">EasyRent.com</option><option value="S000000035">For Rent Magazine</option><option value="S000000008">ForRent.com</option><option value="S000000040">Google.com</option><option value="S000000002">LivingChoices.com</option><option value="S000000069">Local Line Rollover</option><option value="S000000016">Local Newspaper</option><option value="S000000017">Local Newspaper II</option><option value="S000000015">Locator Service</option><option value="S000000049">Move.com</option><option value="S000000045">MoveForFree.com</option><option value="S000000039">MyNewPlace.com</option><option value="S000000018">National Newspaper</option><option value="S000000026">Other</option><option value="S000000031">Other OneSite property</option><option value="S000000032">Other property</option><option value="S000000037">Other publication</option><option value="S000000014">Other site</option><option value="S000000028">Preferred employer program</option><option value="S000000029">Prior resident</option><option value="S000000001">Property web site</option><option value="S000000025">Radio Advertising</option><option value="S000000030">Referral companies/merchants</option><option value="S000000012">Rent.com</option><option value="S000000010">Rentals.com</option><option value="S000000013">RentAndMove.com</option><option value="S000000046">RentClicks.com</option><option value="S000000009">RentNet.com</option><option value="S000000023">Sign</option><option value="S000000024">TV Advertising</option><option value="S000000047">UMoveFree.com</option><option value="S000000038">Unknown/Would not give</option><option value="S000000048">Yahoo.com</option><option value="S000000022">Yellow pages</option></select>';
-                  let internationalProperty = 'false';
-                  let disableReferralTracking = 'False';
-                  let formSuccess = false;
+                  var rpData = null;
+                  var listofReasons = '';
+                  var defaultSource = 'S000000001';
+                  var hideRefer = 'false';
+                  var contactLeadSources = '<select tabindex="7" class="body-txt1" id="usersource" name="usersource"><option value="">-Select Source-</option><option value="S000000033">Apartment Finder Blue Book</option><option value="S000000036">Apartment Guide</option><option value="S000000034">Apartment Map</option><option value="S000000041">ApartmentFinder.com</option><option value="S000000003">ApartmentGuide.com</option><option value="S000000011">Apartmentlinks.com</option><option value="S000000004">ApartmentMatching.com</option><option value="S000000042">ApartmentRatings.com</option><option value="S000000005">Apartments.com</option><option value="S000000006">ApartmentsNationwide.com</option><option value="S000000050">ApartmentsPlus.com</option><option value="S000000019">Billboard</option><option value="S000000020">Brochure/Flyer</option><option value="S000000043">CitySearch.com</option><option value="S000000044">CraigsList.com</option><option value="S000000027">Current resident</option><option value="S000000021">Drive by</option><option value="S000000007">EasyRent.com</option><option value="S000000035">For Rent Magazine</option><option value="S000000008">ForRent.com</option><option value="S000000040">Google.com</option><option value="S000000002">LivingChoices.com</option><option value="S000000069">Local Line Rollover</option><option value="S000000016">Local Newspaper</option><option value="S000000017">Local Newspaper II</option><option value="S000000015">Locator Service</option><option value="S000000049">Move.com</option><option value="S000000045">MoveForFree.com</option><option value="S000000039">MyNewPlace.com</option><option value="S000000018">National Newspaper</option><option value="S000000026">Other</option><option value="S000000031">Other OneSite property</option><option value="S000000032">Other property</option><option value="S000000037">Other publication</option><option value="S000000014">Other site</option><option value="S000000028">Preferred employer program</option><option value="S000000029">Prior resident</option><option value="S000000001">Property web site</option><option value="S000000025">Radio Advertising</option><option value="S000000030">Referral companies/merchants</option><option value="S000000012">Rent.com</option><option value="S000000010">Rentals.com</option><option value="S000000013">RentAndMove.com</option><option value="S000000046">RentClicks.com</option><option value="S000000009">RentNet.com</option><option value="S000000023">Sign</option><option value="S000000024">TV Advertising</option><option value="S000000047">UMoveFree.com</option><option value="S000000038">Unknown/Would not give</option><option value="S000000048">Yahoo.com</option><option value="S000000022">Yellow pages</option></select>';
+                  var internationalProperty = 'false';
+                  var disableReferralTracking = 'False';
+                  var formSuccess = false;
+
                   $(document).ready(function () {
-                      let today = new Date();
-                      let dd = today.getDate();
-                      let mm = today.getMonth() + 1;
-                      let yyyy = today.getFullYear();
+                      var today = new Date();
+                      var dd = today.getDate();
+                      var mm = today.getMonth() + 1;
+
+                      var yyyy = today.getFullYear();
                       if (dd < 10) {
                           dd = '0' + dd;
                       }
                       if (mm < 10) {
                           mm = '0' + mm;
                       }
-                      if (internationalProperty ==='true')
+                      if (internationalProperty == 'true')
                           today = dd + '-' + mm + '-' + yyyy;
                       else
                           today = mm + '-' + dd + '-' + yyyy;
-                      if (internationalProperty ==='true')
-                          $(".contact-mobile-form #movedate").datepicker({dateFormat: "dd-mm-yy", minDate: "0D"});
+
+                      if (internationalProperty == 'true')
+                          $(".contact-mobile-form #movedate").datepicker({ dateFormat: "dd-mm-yy", minDate: "0D" });
                       else
-                          $('.contact-mobile-form #movedate').datepicker({minDate: new Date()});
+                          $('.contact-mobile-form #movedate').datepicker({ minDate: new Date() });
                       $('.contact-mobile-form #movedate').val(today);
+
                       $.ajax({
                           type: 'GET',
                           url: 'CmsSiteManager/callback.aspx?act=Proxy/GetFloorPlans',
@@ -1295,38 +1258,41 @@
                               buildBedRoomSelect();
                           }
                       });
+
                       $('.contactus-float-input-div.reason').append(contactLeadSources);
 
-                      if (hideRefer.toLowerCase() ==='true') {
+                      if (hideRefer.toLowerCase() == 'true') {
                           $('.contactus-float-input-div.reason').hide();
                       } else
                           $('#contact .contactus-float-input-div.comments-txt').css('height', '186px');
 
-                      if (defaultSource ===0)
+                      if (defaultSource == 0)
                           $('#usersource').val('');
                       else if (defaultSource)
                           $('#usersource').val(defaultSource);
                       else
                           $('#usersource').val('');
-                      if (disableReferralTracking.toLowerCase() !=='true' && f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM') && f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM').toLowerCase().indexOf('lsem') !==-1) {
+
+                      if (disableReferralTracking.toLowerCase() != 'true' && f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM') && f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM').toLowerCase().indexOf('lsem') != -1) {
                           $('.contact-mobile-form #usersource option').each(function () {
                               if ($(this).text().replace(' ', '').toLowerCase().indexOf('semtraffic') > -1)
                                   $('.contact-mobile-form #usersource').val($(this).val());
                           });
-                      } else if (disableReferralTracking.toLowerCase() !=='true' && matchedSourceId) {
+                      } else if (disableReferralTracking.toLowerCase() != 'true' && matchedSourceId) {
                           $('.contact-mobile-form #usersource').val(matchedSourceId);
                       }
+
                       $('#dayPhone1').on("keyup", function () {
-                          let value = $(this).val();
-                          let regex1 = /[^[0-9 +]]*/gi;
-                          let regex2 = /[^[0-9]]*/gi;
-                          let newValue = value.substring(0, 1).replace(regex1, '') + value.substring(1).replace(regex2, '');
+                          var value = $(this).val();
+                          var regex1 = /[^[0-9 +]]*/gi;
+                          var regex2 = /[^[0-9]]*/gi;
+                          var newValue = value.substring(0, 1).replace(regex1, '') + value.substring(1).replace(regex2, '');
                           $('#dayPhone1').val(newValue);
                       });
                   });
 
                   function buildBedRoomSelect() {
-                      let kpv = {
+                      var kpv = {
                           "Studio+": 192,
                           "1 Bed /1 Bath": 193,
                           "1 Bed /2 Bath": 194,
@@ -1336,14 +1302,16 @@
                           "3 Bed /2 Bath": 198,
                           "3 Bed /3 Bath": 199
                       };
-                      let bathRooms = 0;
-                      let bedRooms = 0;
-                      let countUnit = 1;
-                      for (let i = 0; i < rpData.floorplans.length; i++) {
-                          let currentbathRooms = rpData.floorplans[i].bathRooms;
-                          let currentbedRooms = rpData.floorplans[i].bedRooms;
-                          if (bathRooms !==currentbathRooms || bedRooms !==currentbedRooms) {
-                              let str = currentbedRooms + ' Bed /' + currentbathRooms + ' Bath';
+                      var bathRooms = 0;
+                      var bedRooms = 0;
+
+                      var countUnit = 1;
+
+                      for (var i = 0; i < rpData.floorplans.length; i++) {
+                          var currentbathRooms = rpData.floorplans[i].bathRooms;
+                          var currentbedRooms = rpData.floorplans[i].bedRooms;
+                          if (bathRooms != currentbathRooms || bedRooms != currentbedRooms) {
+                              var str = currentbedRooms + ' Bed /' + currentbathRooms + ' Bath';
                               $('#bedbathid').append('<option value="' + kpv[str] + '" class="text">' + str + '</option>');
                               bathRooms = currentbathRooms;
                               bedRooms = currentbedRooms;
@@ -1353,23 +1321,27 @@
                   }
 
                   function f_Submit() {
-                      if (formSuccess ===true) {
+                      if (formSuccess == true) {
                           return false;
                       }
                       $('.contact-mobile-form #pid').val(propertyId);
                       $('.contact-mobile-form #lcid').val(4);
-                      let cid = f_getCookie('RP_LSWS_SEM');
+                      var cid = f_getCookie('RP_LSWS_SEM');
                       cid = cid ? cid : "";
                       $('.contact-mobile-form #cid').val(cid);
-                      let o = {};
+
+                      var trackingId = f_analyticsGetTrackingId() || '';
+                      $('.contact-mobile-form #trackingid').val(trackingId);
+
+                      var o = {};
                       $(".contact-mobile-form input").each(function () {
-                          if (internationalProperty ==='true' && this.name ==='movedate')
+                          if (internationalProperty == 'true' && this.name == 'movedate')
                               o[$(this).attr('name')] = ($(this).val().substring(3, 5) + '-' + $(this).val().substring(0, 2) + '-' + $(this).val().substring(6, 10));
                           else
                               o[$(this).attr('name')] = $(this).val();
                       });
                       $(".contact-mobile-form select").each(function () {
-                          if (this.name ==='usersource')
+                          if (this.name == 'usersource')
                               o[$(this).attr('name')] = $('option:selected', this).text();
                           else
                               o[$(this).attr('name')] = $(this).val();
@@ -1377,7 +1349,8 @@
                       $(".contact-mobile-form textarea").each(function () {
                           o[$(this).attr('name')] = $(this).val();
                       });
-                      if ($('.contact-mobile-form #e-mail').val().length ===0) {
+
+                      if ($('.contact-mobile-form #e-mail').val().length == 0) {
                           $.ajax({
                               type: "POST",
                               dataType: "json",
@@ -1393,18 +1366,18 @@
                                   } else {
                                       try {
                                           $('#pnlMobile').hide();
-                                          ga('set', {'dimension15': json.LeaseStarLeadId});
-                                          if (json.Lead2LeaseLeadId !==0)
-                                              ga('set', {'dimension17': json.Lead2LeaseLeadId});
+                                          ga('set', { 'dimension15': json.LeaseStarLeadId });
+                                          if (json.Lead2LeaseLeadId != 0)
+                                              ga('set', { 'dimension17': json.Lead2LeaseLeadId });
                                           f_analyticsSendEvent('Contact', 'Information Request', 'Thank you');
-                                          ga('set', {'dimension15': null, 'dimension17': null});
+                                          ga('set', { 'dimension15': null, 'dimension17': null });
                                       } catch (e) {
                                       }
                                       try {
-                                          _gaq.push(['_trackEvent', 'Contact', 'Information Request', 'Thank you', , false]);
+                                          _gaq.push(['_trackEvent', 'Contact', 'Information Request', 'Thank you',, false]);
                                       } catch (e) {
                                       }
-                                      window.open('Thank-You.html', '_self');
+                                      window.open('/Thank-You.aspx', '_self');
                                   }
                               },
                               beforeSend: function (json) {
@@ -1422,18 +1395,18 @@
                   }
 
                   function f_getCookie(cookieName) {
-                      let cookieValue = document.cookie;
-                      let cookieStart = cookieValue.indexOf(" " + cookieName + "=");
-                      if (cookieStart ===-1) {
+                      var cookieValue = document.cookie;
+                      var cookieStart = cookieValue.indexOf(" " + cookieName + "=");
+                      if (cookieStart == -1) {
                           cookieStart = cookieValue.indexOf(cookieName + "=");
                       }
-                      if (cookieStart ===-1) {
+                      if (cookieStart == -1) {
                           cookieValue = null;
                       }
                       else {
                           cookieStart = cookieValue.indexOf("=", cookieStart) + 1;
-                          let cookieEnd = cookieValue.indexOf(";", cookieStart);
-                          if (cookieEnd ===-1) {
+                          var cookieEnd = cookieValue.indexOf(";", cookieStart);
+                          if (cookieEnd == -1) {
                               cookieEnd = cookieValue.length;
                           }
                           cookieValue = unescape(cookieValue.substring(cookieStart, cookieEnd));
@@ -1442,10 +1415,12 @@
                   }
 
                   function floatValidPhone(b) {
-                      let a = window.event ? b.keyCode : b.which;
-                      if (internationalProperty ==='true' && $('#dayPhone1').val().length ===0 && b.shiftKey && b.keyCode ===43)
+                      var a = window.event ? b.keyCode : b.which;
+
+                      if (internationalProperty == 'true' && $('#dayPhone1').val().length == 0 && b.shiftKey && b.keyCode == 43)
                           return true;
-                      if (a ===0 || a ===8)
+
+                      if (a == 0 || a == 8)
                           return true;
                       if (a > 47 && a < 58)
                           return true;
@@ -1454,88 +1429,58 @@
                   }
               </script>
 
+              <style>
+                .reqErr {border: 1px solid red;}
+              </style>
+
               <div id="pnlMobile" class="mobile">
                 <div class="contact-mobile-form">
-                  <input name="pid" type="hidden" id="pid"/>
-                  <input name="lcid" type="hidden" id="lcid"/>
-                  <input name="cid" type="hidden" id="cid"/>
-                  <div id="contactusFirstName" class="contactus-float-input-div">
-                    <input tabindex="0" name="firstname" type="text" value="First name" maxlength="40" id="firstname"class="body-txt1 required" title="First name" aria-label="first name"/>
-                    <span class="required-field">*</span>
-                  </div>
-                  <div id="contactusLastName" class="contactus-float-input-div">
-                    <input tabindex="0" name="lastname" type="text" value="Last name" maxlength="40" id="lastname" class="body-txt1 required" title="Last name" aria-label="last name"/>
-                    <span class="required-field">*</span>
-                  </div>
-                  <div id="contactusEmail" class="contactus-float-input-div">
-                    <input tabindex="0" name="email" type="text" value="Email" maxlength="40" id="email" class="body-txt1 required-email" title="Email" aria-label="email"/>
-                    <span class="required-field">*</span></div>
-                  <div id="contactusEmailCtrl" class="contactus-float-input-div">
-                    <input title="" tabindex="-1" id="e-mail" type="text" class="hpInput"/>
-                    <p style="display:none">Do not fill out this input form, it is for bot control purposes only.</p>
-                  </div>
-                  <div id="contactusPhone" class="contactus-float-input-div">
-                    <input tabindex="0" name="dayPhone1" type="text" value="Phone number" maxlength="21" id="dayPhone1" class="body-txt1 required" title="Phone number" aria-label="phone number" onkeypress="return floatValidPhone(event);"/>
-                    <span class="required-field">*</span>
-                  </div>
-                  <div id="contactusBedBath" class="contactus-float-input-div"><select tabindex="0" name="bedbathid"
-                                                                                       id="bedbathid" class="body-txt1"
-                                                                                       aria-label="bedrooms" title="">
-                    <option value="">Select Bedrooms</option>
-                  </select></div>
-                  <div id="contactusMoveDate" class="contactus-float-input-div move-in"><input tabindex="0" type="text"
-                                                                                               name="movedate"
-                                                                                               id="movedate"
-                                                                                               class="body-txt1 required"
-                                                                                               title=""
-                                                                                               readonly="readonly"
-                                                                                               aria-label="move in date"/><span
-                    class="required-field">*</span></div>
-                  <div id="contactusReason" class="contactus-float-input-div reason"></div>
-                  <div id="contactusComments" class="contactus-float-input-div comments-txt"><textarea tabindex="0"
-                                                                                                       name="msg"
-                                                                                                       value="Comments"
-                                                                                                       rows="3"
-                                                                                                       cols="20"
-                                                                                                       id="msg"
-                                                                                                       class="body-txt1"
-                                                                                                       title="Comments"
-                                                                                                       aria-label="comments">Comments</textarea>
-                  </div>
-                  <div class="required-info">
-                    <span>*</span> Required Information</div>
+                  <input name="pid" type="hidden" id="pid">
+                  <input name="lcid" type="hidden" id="lcid">
+                  <input name="cid" type="hidden" id="cid">
+                  <input name="trackingid" type="hidden" id="trackingid">
+                  <div id="contactusFirstName" class="contactus-float-input-div"><input tabindex="0" name="firstname" type="text" value="First name" maxlength="40" id="firstname" class="body-txt1 required" title="First name" aria-label="first name"><span class="required-field">*</span></div>
+                  <div id="contactusLastName" class="contactus-float-input-div"><input tabindex="0" name="lastname" type="text" value="Last name" maxlength="40" id="lastname" class="body-txt1 required" title="Last name" aria-label="last name"><span class="required-field">*</span></div>
+                  <div id="contactusEmail" class="contactus-float-input-div"><input tabindex="0" name="email" type="text" value="Email" maxlength="40" id="email" class="body-txt1 required-email" title="Email" aria-label="email"><span class="required-field">*</span></div>
+                  <div id="contactusEmailCtrl" class="contactus-float-input-div"><input tabindex="-1" id="e-mail" type="text" class="hpInput"><p style="display:none">Do not fill out this input form, it is for bot control purposes only.</p></div>
+                  <div id="contactusPhone" class="contactus-float-input-div"><input tabindex="0" name="dayPhone1" type="text" value="Phone number" maxlength="21" id="dayPhone1" class="body-txt1 required" title="Phone number" aria-label="phone number" onkeypress="return floatValidPhone(event);"><span class="required-field">*</span></div>
+                  <div id="contactusBedBath" class="contactus-float-input-div"><select tabindex="0" name="bedbathid" id="bedbathid" class="body-txt1" aria-label="bedrooms"><option value="">Select Bedrooms</option><option value="193" class="text">1 Bed /1 Bath</option><option value="195" class="text">2 Bed /1 Bath</option><option value="196" class="text">2 Bed /2 Bath</option></select></div>
+                  <div id="contactusMoveDate" class="contactus-float-input-div move-in"><input tabindex="0" type="text" name="movedate" id="movedate" class="body-txt1 required hasDatepicker" title="" readonly="readonly" aria-label="move in date"><span class="required-field">*</span></div>
+                  <div id="contactusReason" class="contactus-float-input-div reason"><select tabindex="7" class="body-txt1" id="usersource" name="usersource"><option value="">-Select Source-</option><option value="S000000033">Apartment Finder Blue Book</option><option value="S000000036">Apartment Guide</option><option value="S000000034">Apartment Map</option><option value="S000000041">ApartmentFinder.com</option><option value="S000000003">ApartmentGuide.com</option><option value="S000000011">Apartmentlinks.com</option><option value="S000000004">ApartmentMatching.com</option><option value="S000000042">ApartmentRatings.com</option><option value="S000000005">Apartments.com</option><option value="S000000006">ApartmentsNationwide.com</option><option value="S000000050">ApartmentsPlus.com</option><option value="S000000019">Billboard</option><option value="S000000020">Brochure/Flyer</option><option value="S000000043">CitySearch.com</option><option value="S000000044">CraigsList.com</option><option value="S000000027">Current resident</option><option value="S000000021">Drive by</option><option value="S000000007">EasyRent.com</option><option value="S000000035">For Rent Magazine</option><option value="S000000008">ForRent.com</option><option value="S000000040">Google.com</option><option value="S000000002">LivingChoices.com</option><option value="S000000069">Local Line Rollover</option><option value="S000000016">Local Newspaper</option><option value="S000000017">Local Newspaper II</option><option value="S000000015">Locator Service</option><option value="S000000049">Move.com</option><option value="S000000045">MoveForFree.com</option><option value="S000000039">MyNewPlace.com</option><option value="S000000018">National Newspaper</option><option value="S000000026">Other</option><option value="S000000031">Other OneSite property</option><option value="S000000032">Other property</option><option value="S000000037">Other publication</option><option value="S000000014">Other site</option><option value="S000000028">Preferred employer program</option><option value="S000000029">Prior resident</option><option value="S000000001">Property web site</option><option value="S000000025">Radio Advertising</option><option value="S000000030">Referral companies/merchants</option><option value="S000000012">Rent.com</option><option value="S000000010">Rentals.com</option><option value="S000000013">RentAndMove.com</option><option value="S000000046">RentClicks.com</option><option value="S000000009">RentNet.com</option><option value="S000000023">Sign</option><option value="S000000024">TV Advertising</option><option value="S000000047">UMoveFree.com</option><option value="S000000038">Unknown/Would not give</option><option value="S000000048">Yahoo.com</option><option value="S000000022">Yellow pages</option></select></div>
+                  <div id="contactusComments" class="contactus-float-input-div comments-txt"><textarea tabindex="0" name="msg" value="Comments" rows="3" cols="20" id="msg" class="body-txt1" title="Comments" aria-label="comments">Comments</textarea></div>
+                  <div class="required-info"><span>*</span> Required Information</div>
                   <div class="sumbitbutton">
-                    <input type="button" name="btnSubmit" role="button" aria-label="submit" value="Submit"
-                           id="btnSubmit" tabindex="7" style="width:100px;"/>
+                    <input tabindex="0" type="button" name="btnSubmit" role="button" aria-label="submit" value="Submit" id="btnSubmit" style="width:100px;">
                   </div>
                   <div class="disclaimerText">Contact us to schedule your tour.</div>
                 </div>
                 <script type="text/javascript">
                     $('.contact-mobile-form input').focus(function () {
-                        if ($(this).val() ===$(this).attr("title")) {
+                        if ($(this).val() == $(this).attr("title")) {
                             $(this).val("");
                         }
                     }).blur(function () {
-                        if ($(this).val() ==="") {
+                        if ($(this).val() == "") {
                             $(this).val($(this).attr("title"));
                         }
                     });
                     $('.contact-mobile-form textarea').focus(function () {
-                        if ($(this).val() ===$(this).attr("title")) {
+                        if ($(this).val() == $(this).attr("title")) {
                             $(this).val("");
                         }
                     }).blur(function () {
-                        if ($(this).val() ==="") {
+                        if ($(this).val() == "") {
                             $(this).val($(this).attr("title"));
                         }
                     });
                     $(".contact-mobile-form #btnSubmit").click(function () {
                         emptyFields = false;
                         // get a collection of all empty fields
+
                         //try {
-                        let reg = /^(([^<>()[\]\\.,;:\s@]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                        var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                         f = $('.contact-mobile-form #email');
-                        if (reg.test(f.val()) ===false) {
+                        if (reg.test(f.val()) == false) {
                             msg = f.attr("aria-label");
                             f.attr("aria-invalid", "true");
                             f.addClass('reqErr');
@@ -1548,7 +1493,7 @@
                         }
                         //} catch (e) { }
                         $($(".contact-mobile-form input.required").get().reverse()).each(function () {
-                            if ($(this).val() ===$(this).attr("title")) {
+                            if ($(this).val() == $(this).attr("title")) {
                                 emptyFields = true;
                                 msg = $(this).attr("aria-label");
                                 $(this).attr("aria-invalid", "true");
@@ -1565,7 +1510,7 @@
                         }
                         else {
                             $('.contact-mobile-form input').each(function (i) {
-                                if ($(this).val() ===$(this).attr("title")) {
+                                if ($(this).val() == $(this).attr("title")) {
                                     $(this).val("");
                                 }
                             });
@@ -1575,9 +1520,8 @@
                 </script>
               </div>
               <div>
-                <p id="lblError" class="error-msg"></p>
-              </div>
-            </div>
+                <p type="label" id="lblError" class="error-msg"></p>
+              </div></div>
           </div>
         </div>
       </div>
@@ -1585,60 +1529,86 @@
     <div id="" class="home-section4">
       <div id="section-4-container" class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-3">
             <div id="section4-left-panel">
-              <h3>Find Something New</h3>
-              <a href="floor-plans-2.html" target="_self" class="home-cta-button">
+              <h3>Meet your hosts</h3>
+              <a href="Hosts.html" target="_self" class="home-cta-button">
         <span>
-          Availability
+         Hosts
           <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
         </span>
               </a>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-9">
             <div id="section4-right-panel">
               <div id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection4_WebPartLoader1_pnlContainer">
                 <div
                   id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneHomeSection4_WebPartLoader1_ctl00_pnlGallerySocialInstagram"
                   class="widget gallery-social-widget">
 
-                  <script src="TemplateResources/Global/scripts/instafeed.min.js" type="text/javascript"></script>
-                  <script type="text/javascript">
-                      let user = {};
-                      let grams = {};
-                      let spacer = 'templateresources/global/images/space.png';
-                      let feed = new Instafeed({
-                          get: 'user',
-                          userId: 5950818224,
-                          accessToken: '5950818224.5098cda.be65eb8c458b419d983ff0c010e93d6d',
-                          resolution: 'standard_resolution',
-                          limit: 12,
-                          target: 'instagram-widget-images',
-                          mock: true,
-                          success: function (e) {
-                              user = e.data[0].user;
-                              grams = e.data;
-                              $.each(grams, function (idx, val) {
-                                  if (idx < 12) {
-                                      let el = $('<a href="' + grams[idx].link + '" target="_blank" style="background-image:url(' + grams[idx].images.standard_resolution.url + ')"><img src="' + spacer + '"/></a>');
-                                      if (idx ===1) {
-                                          el.append('<div class="gallery-social-card"><div class="gallery-social-card-content"><p><em class="fa fa-instagram"></em></p><p class="gallery-social-source">Instagram</p><p class="gallery-social-hashtag"><a href="https://www.instagram.com/' + user.username + '/" target="_blank">@' + user.username + '</a></p></div></div><div class="gallery-social-card gallery-social-card--hover"><div class="gallery-social-card-content"><p class="gallery-social-hashtag"><span><em class="fa fa-heart"></em> ' + grams[idx].likes.count + '</span><span><em class="fa fa-comment"></em> ' + grams[idx].comments.count + '</span></p></div></div>');
-                                      } else {
-                                          el.append('<div class="gallery-social-card gallery-social-card--hover"><div class="gallery-social-card-content"><p class="gallery-social-hashtag"><span><em class="fa fa-heart"></em> ' + grams[idx].likes.count + '</span><span><em class="fa fa-comment"></em> ' + grams[idx].comments.count + '</span></p></div></div>');
-                                      }
-                                      $('#instagram-widget-images').append(el);
-                                  }
-                              });
-                              $('.gallery-social-footer-name').html('<a href="https://www.instagram.com/' + user.username + '/" target="_blank">' + '<em class="fa fa-instagram"></em> @' + user.username + '</a>');
-                          },
-                          error: function (e) {
-                              $('#instagram-widget-images').html(e);
-                          }
-                      });
-                      feed.run();
-                  </script>
-                  <div class="gallery-social-images" id="instagram-widget-images"></div>
+                  <!--<script src="TemplateResources/Global/scripts/instafeed.min.js" type="text/javascript"></script>-->
+                  <!--<script type="text/javascript">-->
+                      <!--let user = {};-->
+                      <!--let grams = {};-->
+                      <!--let spacer = 'TemplateResources/Global/images/spacer.png';-->
+                      <!--let feed = new Instafeed({-->
+                          <!--get: 'user',-->
+                          <!--userId: 5950818224,-->
+                          <!--accessToken: '5950818224.5098cda.be65eb8c458b419d983ff0c010e93d6d',-->
+                          <!--resolution: 'standard_resolution',-->
+                          <!--limit: 12,-->
+                          <!--target: 'instagram-widget-images',-->
+                          <!--mock: true,-->
+                          <!--success: function (e) {-->
+                              <!--user = e.data[0].user;-->
+                              <!--grams = e.data;-->
+                              <!--$.each(grams, function (idx, val) {-->
+                                  <!--if (idx < 12) {-->
+                                      <!--let el = $('<a href="' + grams[idx].link + '" target="_blank" style="background-image:url(' + grams[idx].images.standard_resolution.url + ')"><img src="' + spacer + '"/></a>');-->
+                                      <!--if (idx ===1) {-->
+                                          <!--el.append('<div class="gallery-social-card"><div class="gallery-social-card-content"><p><em class="fa fa-instagram"></em></p><p class="gallery-social-source">Instagram</p><p class="gallery-social-hashtag"><a href="https://www.instagram.com/' + user.username + '/" target="_blank">@' + user.username + '</a></p></div></div><div class="gallery-social-card gallery-social-card&#45;&#45;hover"><div class="gallery-social-card-content"><p class="gallery-social-hashtag"><span><em class="fa fa-heart"></em> ' + grams[idx].likes.count + '</span><span><em class="fa fa-comment"></em> ' + grams[idx].comments.count + '</span></p></div></div>');-->
+                                      <!--} else {-->
+                                          <!--el.append('<div class="gallery-social-card gallery-social-card&#45;&#45;hover"><div class="gallery-social-card-content"><p class="gallery-social-hashtag"><span><em class="fa fa-heart"></em> ' + grams[idx].likes.count + '</span><span><em class="fa fa-comment"></em> ' + grams[idx].comments.count + '</span></p></div></div>');-->
+                                      <!--}-->
+                                      <!--$('#instagram-widget-images').append(el);-->
+                                  <!--}-->
+                              <!--});-->
+                              <!--$('.gallery-social-footer-name').html('<a href="https://www.instagram.com/' + user.username + '/" target="_blank">' + '<em class="fa fa-instagram"></em> @' + user.username + '</a>');-->
+                          <!--},-->
+                          <!--error: function (e) {-->
+                              <!--$('#instagram-widget-images').html(e);-->
+                          <!--}-->
+                      <!--});-->
+                      <!--feed.run();-->
+                  <!--</script>-->
+                  <div class="gallery-social-images" id="instagram-widget-images">
+                    <div class="row">
+                      <div class="flex col-xs-12">
+                        <div class="host">
+                          <a href="Hosts.html?selected=client-panel-2"></a>
+                        </div>
+                        <div class="host1">
+                          <a href="Hosts.html?selected=client-panel-2"></a>
+                        </div>
+                        <div class="host2 col-sm-pull-4"> <a href="Hosts.html?selected=client-panel-2"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="flex col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="host3">
+                          <a href="Hosts.html?selected=client-panel-2"></a>
+                        </div>
+                        <div class="host">
+                          <a href="Hosts.html?selected=client-panel-2"></a>
+                        </div>
+                        <div class="host">
+                          <a href="Hosts.html?selected=client-panel-2"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="gallery-social-footer">
                     <div class="col-md-8"><a href="floor-plans-2.html">Availability</a></div>
                     <div class="col-md-4 gallery-social-footer-name"></div>
@@ -1800,7 +1770,7 @@
                 var basanovich = {lat: 43.216781, lng: 27.929682};*/
 
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 14,
+                    zoom: 15,
                     center: radulov
                 });
 
@@ -1813,9 +1783,10 @@
 
                 var markerArray = [
                     ["Madara Apartment", 43.218778,27.929720, 1],
-                    ['Sava Radulov Apartment', 43.21238,27.9256, 2],
+                    ['Sava Radulov Apartment', 43.21225,27.9258, 2],
                     ['Basanovich Apartment', 43.216781,27.929682, 3],
-                    ['Sava Radulov 2 Apartment', 43.21236,27.9260, 4]
+                    ['Sava Radulov 2 Apartment', 43.21225,27.9260, 4],
+                    ['Nikolaevich Apartment', 43.2125,27.9258, 5]
                 ];
 
                 let markerr, i;
@@ -1913,7 +1884,7 @@
           </div>
           <div class="col-sm-6">
             <div class="cta-button">
-              <a href="http://maps.google.com/?q=555%20Ross%20Avenue,%20Dallas,%20TX%2075201" target="_blank">
+              <a href="" target="_blank">
                 House Rules <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
               </a>
             </div>
@@ -2006,13 +1977,13 @@
       <div class="row">
         <div class="col-md-3 col-sm-12">
           <div id="footerLogo1" class="footer-logo">
-            <a href="index.html">
+            <div>
               <img
             id="p_lt_zoneFooter1_EditableImage2_ucEditableImage_imgImage"
             title="Bahnevi Apartments Varna"
-            src="../capi.myleasestar.com/finale.png"
-            alt="https://capi.myleasestar.com/v2/dimg/51691121/%s/51691121.png" style="border-width:0;"/>
-          </a>
+            src="../images/finale.png"
+            alt="https://images/v2/dimg/51691121/%s/51691121.png" style="border-width:0;"/>
+          </div>
           </div>
           <div id="footerLogo2" class="footer-logo">
             <a href="index.html">
@@ -2042,15 +2013,16 @@
         </div>
         <div class="col-md-2 col-sm-2"><h5>Links</h5>
           <ul id="menuEle">
-            <li class="site-map">
-              <a href="site-map.html">Site Map</a>
-            </li>
-            <li class="privacy">
-              <a href="privacy-policy.html">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="http://aurora.cms2.myleasestar.com/" class="residents" target="_blank">Residents</a>
-            </li>
+            <li style=""><a href="Home.html" style="">Home</a></li>
+            <li class="gallery" style=""><a href="Gallery.html" style="">Gallery</a></li>
+            <li class="active features" style=""><a href="Features.html" style="">Features</a></li>
+            <li class="" style=""><a href="Cancellations.html" style="">Cancellations</a></li>
+            <li class="" style=""><a href="Hosts.html" style="">Hosts</a></li>
+            <li class="" style=""><a href="Cancellations.html" style="">House Rules</a></li>
+            <li class="floor-plans" style=""><a href="Floor-plans.html" style="">Floor plans</a></li>
+            <li class="location" style=""><a href="Location.html" style="">Location</a></li>
+            <li class="residents" style=""><a href="http://aurora.cms2.myleasestar.com/" style="">Residents</a></li>
+            <li class="contact" style=""><a href="Contact-2.html" style="">Contact Us</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-5">
@@ -2073,6 +2045,88 @@
       </div>
     </div>
   </footer>
+  <script>
+      let modal = document.getElementById('myModal');
+      // Get the modal
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      let img = document.getElementById("myImg");
+      let modalImg = document.getElementById("img01");
+      let captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      let span = document.getElementsByClassName("close2")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+  </script>
+  <script>
+      function openModal() {
+          document.getElementById('myModall').style.display = "block";
+      }
+
+      function closeModal() {
+          document.getElementById('myModall').style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+          showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+  </script>
+  <script>
+      let modal3 = document.getElementById('myModal');
+      // Get the modal
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      let img3 = document.getElementById("myImg1");
+      let modalImg3 = document.getElementById("img01");
+      let captionText3 = document.getElementById("caption");
+      img3.onclick = function(){
+          modal3.style.display = "block";
+          modalImg3.src = this.src;
+          captionText3.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      let span3 = document.getElementsByClassName("close2")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span3.onclick = function() {
+          modal3.style.display = "none";
+      }
+  </script>
   <script type="text/javascript">
       //<![CDATA[
       (function () {
@@ -2097,5 +2151,68 @@
     catch (err) {
     }
 </script>
+<script>
+    // remove current selection
+    $(" ul.tabs li").removeClass("is-active");
+
+    // check if the desired tab exists
+    if ( $("#" + (window.location.hash.replace("#", ""))) ) {
+
+        // selected desired tab
+        $("#" + (window.location.hash.replace("#", ""))).addClass("is-active");
+
+    } else {
+
+        // select first tab
+        $('ul.tabs li:first').addClass('is-active');
+    }
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+    var url = new URL(window.location.href);
+    var selector = url.searchParams.get("selected");
+    $("#" + selector).attr("aria-selected", "true")
+</script>
+<script>
+    var d = new Date();
+    let dateClock = d.getDate();
+    let monthClock = d.getMonth();
+    let yearClock = d.getFullYear();
+    const weekday = new Array(7);
+    weekday[0] =  "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    document.getElementById("date").innerHTML = `${weekday[d.getDay()]} ${dateClock}   ${monthNames[d.getMonth()]}   ${yearClock}`;
+</script>
+<script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+</div>
 </body>
 </html>
